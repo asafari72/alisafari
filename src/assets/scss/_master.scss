@@ -42,12 +42,12 @@ body {
                 font-family: 'Roboto', cursive;
                 line-height: 48px;
                 color: darken($color: $grey, $amount: 50%);
-                font-size: 18px;
+                font-size: 14px;
                 &::before {
                     content: "";
                     width: 50px;
-                    height: 2px;
-                    background: darken($color: $grey, $amount: 10%);
+                    height: 1px;
+                    background: $grey;
                     display: inline-block;
                     float: left;
                     margin: 25px 0 0 0;
@@ -55,8 +55,8 @@ body {
                 &::after {
                     content: "";
                     width: 50px;
-                    height: 2px;
-                    background: darken($color: $grey, $amount: 10%);
+                    height: 1px;
+                    background: $grey;
                     display: inline-block;
                     float: right;
                     margin: 25px 0 0 0;

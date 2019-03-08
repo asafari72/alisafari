@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { NavLink } from "react-router-dom";
-import Logo from "../../assets/images/alisafari.jpeg"
+
 export class SidebarComponent extends Component {
     render() {
         return (
