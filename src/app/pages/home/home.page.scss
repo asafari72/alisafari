@@ -1,0 +1,48 @@
+.home-container{
+    background-image: url("../../../assets/images/home-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        margin: 0;
+        font-size: 100px;
+        color: #616570;
+       
+    }
+    h4{
+        font-size: 20px;
+        font-weight: 100;
+        letter-spacing: 6px;
+        
+    }
+    .ali-avatar {
+        width: 30vw;
+        margin-bottom: 30px;
+        border-radius: 50%;
+        display: none;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .home-container{
+        text-align: center;
+      
+        h1{
+            font-size: 40px;
+        }
+        h4{
+            font-size: 16px;
+            letter-spacing: 3px;
+        }
+        .ali-avatar{
+            display: block;
+        }
+    }
+}

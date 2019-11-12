@@ -1,0 +1,89 @@
+<header class="mobile-header">
+    <i mat-raised-button class="material-icons" (click)="drawer.toggle()">
+        menu
+    </i>
+
+</header>
+<mat-drawer-container class="drawer-container" autosize>
+    <mat-drawer #drawer class="drawer-sidenav" mode="side">
+        <aside class="mobile-side">
+            <div>
+                <div class="side-person">
+                    <img src="../../assets/images/alisafari.png" alt="Ali Safari">
+                    <h1>
+                        Ali Safari
+                    </h1>
+                    <h5>
+                        Everything is coding
+                    </h5>
+                </div>
+                <ul class="side-menu">
+                    <li><a (click)="drawer.close()" routerLink="/home" routerLinkActive="active">Home</a></li>
+                    <li><a (click)="drawer.close()" routerLink="/blog" routerLinkActive="active">Blog</a></li>
+                    <li><a (click)="drawer.close()" routerLink="/portfolio" routerLinkActive="active">Portfolio</a></li>
+                    <li><a (click)="drawer.close()" routerLink="/about" routerLinkActive="active">About</a></li>
+                    <li><a (click)="drawer.close()" routerLink="/contact" routerLinkActive="active">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-networks">
+                <a href="https://www.facebook.com/asafari72" target="_blank" mat-raised-button matTooltip="Facebook">
+                    <img src="../../assets/images/social-networks/facebook.svg" alt="Ali Safari Facebook Page">
+                </a>
+                <a href="https://www.instagram.com/asafari72/" target="_blank" mat-raised-button matTooltip="Instagram">
+                    <img src="../../assets/images/social-networks/instagram.svg" alt="Ali Safari Instagram Page">
+                </a>
+                <a href="https://twitter.com/asafari72" target="_blank" mat-raised-button matTooltip="Twitter">
+                    <img src="../../assets/images/social-networks/twitter.svg" alt="Ali Safari Twitter Page">
+                </a>
+                <a href="tel:+989135424277" mat-raised-button matTooltip="Whatsapp">
+                    <img src="../../assets/images/social-networks/whatsapp.svg" alt="Ali Safari Whatsapp Number">
+                </a>
+            </div>
+        </aside>
+    </mat-drawer>
+
+    <div class="sidenav-content" (click)="drawer.close()">
+        <div class="main-layout-container">
+            <aside class="main-side">
+                <div>
+                    <div class="side-person">
+                        <img src="../../assets/images/alisafari.png" alt="Ali Safari" (click)="drawer.toggle()">
+                        <h1>
+                            Ali Safari
+                        </h1>
+                        <h5>
+                            Everything is coding
+                        </h5>
+                    </div>
+                    <ul class="side-menu">
+                        <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+                        <li><a routerLink="/blog" routerLinkActive="active">Blog</a></li>
+                        <li><a routerLink="/portfolio" routerLinkActive="active">Portfolio</a></li>
+                        <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+                        <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="social-networks">
+                    <a href="https://www.facebook.com/asafari72" target="_blank" mat-raised-button
+                        matTooltip="Facebook">
+                        <img src="../../assets/images/social-networks/facebook.svg" alt="Ali Safari Facebook Page">
+                    </a>
+                    <a href="https://www.instagram.com/asafari72/" target="_blank" mat-raised-button
+                        matTooltip="Instagram">
+                        <img src="../../assets/images/social-networks/instagram.svg" alt="Ali Safari Instagram Page">
+                    </a>
+                    <a href="https://twitter.com/asafari72" target="_blank" mat-raised-button matTooltip="Twitter">
+                        <img src="../../assets/images/social-networks/twitter.svg" alt="Ali Safari Twitter Page">
+                    </a>
+                    <a href="tel:+989135424277" target="_blank" mat-raised-button matTooltip="Whatsapp">
+                        <img src="../../assets/images/social-networks/whatsapp.svg" alt="Ali Safari Whatsapp Number">
+                    </a>
+                </div>
+            </aside>
+            <article>
+                <router-outlet></router-outlet>
+            </article>
+        </div>
+    </div>
+
+</mat-drawer-container>

@@ -1,0 +1,27 @@
+<div class="contact-container">
+  <div class="page-header">
+    <h1>Contact Me</h1>
+    <h5>Ways to Connect with Me</h5>
+  </div>
+  <div class="page-content">
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input [(ngModel)]="name" matInput placeholder="Enter your name">
+      <mat-hint>Nice to meet you {{name}}</mat-hint>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline">
+      <mat-label>E-Mail</mat-label>
+      <input [(ngModel)]="email" matInput placeholder="Enter your email">
+      <mat-hint>So I'll call this email {{email}}</mat-hint>
+    </mat-form-field>
+    <br>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Message</mat-label>
+      <textarea rows="8" matInput placeholder="type your message"></textarea>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" style="height: 50px;">Submit</button>
+  </div>
+</div>

@@ -1,0 +1,228 @@
+.main-layout-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  > aside {
+    position: relative;
+    display: flex;
+    flex: 2;
+    box-shadow: 0px 0px 14px gainsboro;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    .side-person {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      img {
+        width: 50%;
+        border-radius: 50%;
+      }
+      h1 {
+        font-weight: 200;
+        margin-bottom: 0;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #e6e6e6;
+      }
+      h5 {
+        font-weight: 100;
+        margin: 5px 0;
+      }
+    }
+    .side-menu {
+      padding: 0;
+      list-style: none;
+      font-weight: 200;
+      font-size: 20px;
+      font-weight: 300;
+      margin-top: 50px;
+
+      li {
+        margin: 20px 0;
+        text-align: center;
+
+        a {
+          text-decoration: none;
+          color: #616570;
+          &.active {
+            border-bottom: 1px solid #616570;
+            color: #616570;
+            padding: 5px;
+          }
+        }
+      }
+    }
+    .social-networks {
+      width: 60%;
+      height: 100px;
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      img {
+        width: 25px;
+      }
+    }
+  }
+  > article {
+    flex: 10;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+.page-header {
+  height: 40vh;
+  background: rgba(97, 101, 112, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #616570;
+
+  h1 {
+    font-size: 72px;
+    margin: 0;
+  }
+  h5 {
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: 100;
+  }
+}
+
+.page-content {
+  width: 80vh;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  p {
+    line-height: 30px;
+  }
+}
+.fa-text {
+  direction: rtl;
+  text-align: right;
+}
+
+.mobile-header {
+  display: none !important;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  z-index: 2;
+  box-shadow: 0px 1px 9px #e0e0e0;
+  justify-content: space-between;
+  i {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .main-layout-container {
+    > aside {
+      display: none !important;
+    }
+  }
+  .page-header {
+    padding-top: 50px;
+
+    h1 {
+      font-size: 50px;
+    }
+    h5 {
+      font-size: 16px;
+      text-align: center;
+      line-height: 26px;
+      letter-spacing: normal;
+    }
+  }
+  .page-content {
+    width: auto !important;
+    margin: 20px !important;
+  }
+  .mobile-header {
+    display: block !important;
+  }
+}
+
+.mobile-side {
+  position: relative;
+  display: flex;
+  box-shadow: 0px 0px 14px gainsboro;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 300px;
+  .side-person {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    img {
+      width: 50%;
+      border-radius: 50%;
+    }
+    h1 {
+      font-weight: 200;
+      margin-bottom: 0;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #e6e6e6;
+    }
+    h5 {
+      font-weight: 100;
+      margin: 5px 0;
+    }
+  }
+  .side-menu {
+    padding: 0;
+    list-style: none;
+    font-weight: 200;
+    font-size: 20px;
+    font-weight: 300;
+
+    li {
+      margin: 20px 0;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        color: #616570;
+        &.active {
+          border-bottom: 1px solid #616570;
+          color: #616570;
+          padding: 5px;
+        }
+      }
+    }
+  }
+  .social-networks {
+    width: 60%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 25px;
+    }
+  }
+}
